@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+
 import pandas as pd
 import joblib
 import matplotlib
@@ -11,6 +12,7 @@ import base64
 from io import BytesIO
 
 app = Flask(__name__)
+
 
 # LOAD MODEL
 model = joblib.load("fraud_model.pkl")
